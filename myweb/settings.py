@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m!syqk)=^q-ecxx+p%c%g=wp%lz9rqxxra6p)^9c_-g_!w)b34'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['zainweb.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -120,6 +120,7 @@ USE_TZ = True
 STATIC_URL = '/staticfiles/'
 MEDIA_URL='/images/'
 
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 
 STATICFILES_DIRS=[
 os.path.join(BASE_DIR,'staticfiles')
